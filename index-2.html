@@ -1,0 +1,246 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <meta name="theme-color" content="#fafafa">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        colors: {
+          'blue-banner': '#122656',
+          'blue-text': '#002033',
+          'blue-title': '#00629B',
+          grey: '#797A7C',
+          'grey-lightest': '#F7F7F7',
+          'grey-mid': '#E5E5E5',
+          'white-off': '#F7F8FA',
+          black: '#000000',
+          danger: '#D32F2f',
+          link: '#00629B',
+          'link-disabled': '#7CADCA',
+          success: '#6BA33E',
+          warning: '#E46F1F',
+          white: '#FFFFFF',
+          primary: '#00629B',
+        },
+        extend: {},
+        fontFamily: {
+          'sans': ['Roboto']
+        }
+      },
+    }
+  </script>
+
+</head>
+
+<body class="p-5">
+  <!-- CARD 1 Maturity notice -->
+  <!-- my attempt, its not great tho -->
+  <!-- <div class="p-4 bg-blue-banner shadow-md grid grid-cols-2 md:p-8 md:grid-rows-2 md:grid-cols-3">
+    <img class="h-7 w-7 mr-3.5 md:h-10 md:w-10 md:row-span-2 md:self-center"
+      src="C:\Users\ryeoh\CPWComponents\img\Info-icon.png" alt="info-icon">
+    <h1 class="text-white font-bold">Maturity</h1>
+    <p class="text-white col-span-2 md:col-span-1 md:order-last">Your Guaranteed Annuity is due to mature in 10 days.
+    </p>
+    <button
+      class="text-white text-sm bg-blue-title p-4 max-w-min h-min col-span-2 md:col-span-1 md:row-span-2 md:self-center md:justify-self-end"
+      type="button">DEFAULT</button>
+  </div> -->
+  <!-- non-cheating but image not aligned-->
+  <!-- <div class="p-4 bg-blue-banner shadow-md mt-6 md:flex md:items-center">
+    <div class="flex flex-wrap">
+      <img class="h-7 w-7 md:h-full mr-3" src="C:\Users\ryeoh\CPWComponents\img\Info-icon.png" alt="info-icon">
+      <h1 class="text-white font-bold mr-auto">Maturity</h1>
+      <p class="text-white w-full md:ml-10">Your Guaranteed Annuity is due to mature in 10 days.</p>
+    </div>
+    <button class="text-white text-sm bg-blue-title p-4 max-w-min h-min md:ml-auto" type="button">DEFAULT</button>
+  </div> -->
+  <!-- cheating but image is alined -->
+  <div class="p-4 bg-blue-banner shadow-md mt-6 md:flex md:items-center">
+    <img class="h-7 w-7 md:h-full mr-3 md:block hidden" src="C:\Users\ryeoh\CPWComponents\img\Info-icon.png"
+      alt="info-icon">
+
+    <div class="flex flex-wrap">
+      <img class="h-7 w-7 md:h-full mr-3 md:hidden" src="C:\Users\ryeoh\CPWComponents\img\Info-icon.png"
+        alt="info-icon">
+      <h1 class="text-white font-bold mr-auto">Maturity</h1>
+      <p class="text-white w-full">Your Guaranteed Annuity is due to mature in 10 days.</p>
+    </div>
+    <button class="text-white text-sm bg-blue-title p-4 max-w-min h-min md:ml-auto border border-blue-title hover:bg-white hover:text-blue-title" type="button">DEFAULT</button>
+  </div>
+  <br>
+  <!-- CARD 2 GA table -->
+  <div class="border border-grey-mid">
+    <div class="flex items-center justify-between border-b border-grey-mid px-4 py-2">
+      <h1 class="text-blue-title text-lg">Guaranteed Annuity</h1>
+      <button type="button">
+        <img class="h-4 w-6 md:hidden" src="C:\Users\ryeoh\CPWComponents\img\eye-icon.png">
+      </button>
+      <button class="md:flex items-center bg-[#7CADCA]/20 px-2 py-1 hidden border border-[#7CADCA]/0 hover:border-blue-title hover:bg-white" type="button">
+        <p class="text-blue-title mr-3">View more</p>
+        <img class="w-4 h-[11px] hidden md:block" src="C:\Users\ryeoh\CPWComponents\img\eye-icon.png">
+      </button>
+    </div>
+    <div class="m-3.5 grid grid-cols-2 gap-y-4 md:flex md:justify-between">
+      <div>
+        <p class="text-lg text-blue-text">000 000 000</p>
+        <p class="text-grey">Policy number</p>
+      </div>
+      <div>
+        <p class="text-lg text-blue-text text-right">$255,610.00</p>
+        <p class="text-grey text-right">Current Balance</p>
+      </div>
+      <div>
+        <p class="text-lg text-blue-text md:text-right">$610.000</p>
+        <p class="text-grey md:text-right">Next payment</p>
+      </div>
+      <div>
+        <p class="text-lg text-blue-text text-right">21/12/2020</p>
+        <p class="text-grey text-right">Due</p>
+      </div>
+    </div>
+  </div>
+  <br>
+  <!-- CARD 3 epost-->
+  <div class="max-w-sm border border-grey-mid border-t-4 border-t-[#7CADCA] p-4">
+    <h1 class="font-bold mb-2">ePost</h1>
+    <p class="text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit</p>
+    <br>
+    <button class="text-white text-sm bg-blue-title p-4 border border-blue-title hover:bg-white hover:text-blue-title" type="button">DEFAULT</button>
+  </div>
+  <br>
+  <!-- CARD 4 -->
+  <div class="max-w-sm p-4 border-t-2 border-t-grey-mid">
+    <div class="flex items-center">
+      <img class="w-4 h-4 mr-5" src="C:\Users\ryeoh\CPWComponents\img\data-icon.png">
+      <h1 class="text-blue-title font-bold">Title</h1>
+    </div>
+    <br>
+    <p class="text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet,
+      consectetur adipiscing elit.</p>
+    <br>
+    <div class="flex items-center">
+      <button class="text-blue-title border-b-2 pb-1 hover:text-blue-banner" type="button">DEFAULT STATE</button>
+      <img class="h-3 ml-2" src="C:\Users\ryeoh\CPWComponents\img\arrow-icon.png">
+    </div>
+  </div>
+  <br>
+  <!-- CARD 5 centerlink notice -->
+  <div class="border border-grey-mid shadow-md">
+    <div class="bg-blue-banner p-4">
+      <h1 class="text-white text-xl font-bold">Centerlink schedule requested!</h1>
+    </div>
+    <div class="m-4">
+      <p class="text-grey">Centerlink schedule requested. Check your latest correspondence page to find it
+        within the next 5 minutes. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+
+      <div class="grid items-center grid-cols-1 md:grid-cols-2 my-4">
+        <label class="flex items-center mb-2">
+          <input type="checkbox" class="appearance-none mr-2 h-6 w-6 border-2 border-blue-title checked:bg-blue-title">
+          Email me the quote
+        </label>
+        <div class="justify-self-end">
+          <button class="text-sm text-blue-title mr-4 p-4 border border-blue-title hover:text-white hover:bg-blue-title" type="button">DISMISS</button>
+          <button class="text-white text-sm bg-blue-title p-4 border border-blue-title hover:bg-white hover:text-blue-title" type="button">GOT IT</button>
+        </div>
+    </div>
+
+    </div>
+  </div>
+  <br>
+  <!-- GA lifetime table -->
+  <div class="border border-grey-mid">
+    <div class="bg-blue-title text-white p-4 flex items-center justify-between">
+      <h1 class="text-lg">Guaranteed Annuity ( Liquid Lifetime )</h1>
+      <button type="button" class="flex">
+        <p class="hidden md:block text-sm">Download annual statement</p>
+        <img class="h-5 ml-5" src="C:\Users\ryeoh\CPWComponents\img\download-icon.png" alt="download-icon">
+      </button>
+    </div>
+    <div class="hidden md:block">
+      <div class="grid grid-cols-4 m-3.5">
+        <div>
+          <p class="text-lg text-blue-text">Lorem ipsum</p>
+          <p class="text-grey">Policy name</p>
+        </div>
+        <div>
+          <p class="text-lg text-blue-text text-right">Individual super</p>
+          <p class="text-grey text-right">Account type</p>
+        </div>
+        <div>
+          <p class="text-lg text-blue-text text-right">20/05/2014</p>
+          <p class="text-grey text-right">Opened</p>
+        </div>
+        <div>
+          <p class="text-lg text-blue-text text-right">$100,000.00</p>
+          <p class="text-grey text-right">Investment amount</p>
+        </div>
+      </div>
+      <hr class="text-grey-mid">
+      <div class="grid grid-cols-4 m-3.5">
+        <div>
+          <p class="text-lg text-blue-text">Lifetime</p>
+          <p class="text-grey">Term</p>
+        </div>
+        <div>
+          <p class="text-lg text-blue-text text-right">N/A</p>
+          <p class="text-grey text-right">Liquidity option</p>
+        </div>
+        <div>
+          <p class="text-lg text-blue-text text-right">$100,000.00</p>
+          <p class="text-grey text-right">Withdrawal guarantee</p>
+        </div>
+        <div>
+          <p class="text-lg text-blue-text text-right">20/05/2029</p>
+          <p class="text-grey text-right">withdrawl ...</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <br>
+  <!-- Bank account details -->
+  <div class="border border-grey-mid border-l-4 border-l-blue-title p-2 flex justify-between items-center">
+    <div class="flex items-center">
+      <input type="checkbox" class="appearance-none mr-2 h-5 w-5 border border-grey-mid hidden md:inline checked:bg-grey-mid">
+      <p class="text-blue-title">Bank account details</p>
+    </div>
+    <label class="md:flex items-center text-sm text-blue-title hidden">
+      Download annual statement
+      <input type="checkbox" class="appearance-none ml-2 h-5 w-5 border border-grey-mid checked:bg-grey-mid">
+    </label>
+    <img class="h-4 md:hidden" src="C:\Users\ryeoh\CPWComponents\img\chevron-right-icon.png">
+  </div>
+
+  <!----------------------------------------------------------------------- DON'T EDIT BELOW   ------------------------------------------------------------------->
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>

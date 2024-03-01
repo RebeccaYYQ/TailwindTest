@@ -1,0 +1,64 @@
+For index 1
+Card 1
+    Has shadowing
+
+Card 3 
+    top border has slants on edges
+    top border may be wrong color
+
+Card 5
+    the grey border is around header
+
+------------------------------------------------
+For index 2
+Check I didn't mess up margin and padding again
+
+Card structure - header and content divs, make that consistent
+    where should padding sit? 
+
+Instead of margins, maybe use space between 
+Text has padding on top and bottom
+
+Shadow for card 1 and 5 might be off
+
+Card 1
+    Missing shadowing
+    Icon size
+    Line height is diff. but its minor.
+
+Card 2
+    Sizing but hard to tell with card 1 as diff size.
+
+Card 3
+    Same issue as index 1
+
+Card 5
+    the grey border is around header
+    checked appearance
+    I changed the padding pretty noticably
+
+GA Lifetime table
+    Is there a better way to do the lines in between rows
+
+-----------------
+Other to do
+On hover
+    the hover states are different for desktop and tablet/mobile. decided to not care
+    card 4 the -> icon doesn't change color
+
+Click states
+
+Dummy links
+
+checkboxes don't have tick
+
+-----------------------
+Responsiveness to fix
+Card 1
+    I used a grid method but it feels like the long way to go about it 
+    asdljf its not working, maybe having the text warp around the image in the mobile verison and grouping the header and the text would be a solution
+    or negative margins on the top to bring it up
+    margins on things (icon, body text)
+
+Card 2
+    The dates also change (from xx/xx/xx to day month)
